@@ -3,16 +3,15 @@
 |Home_Icon|_
 `Learning Center Home <http://learning.cyverse.org/>`_
 
-QUICKSTART NAME
-===============
-
-..
-    #### Comment: Use short, imperative titles e.g. Upload and share data, uploading and
-    sharing data ####
+Submit High-througput Sequencing Reads to NCBI Short Read Archive (SRA)
+=========================================================================
 
 Goal
 ----
-
+This workflow enables CyVerse users to make submissions to the `NCBI Sequence Read Archive (SRA) <https://www.ncbi.nlm.nih.gov/sra>`_.  
+Submissions instructions include compressed sequenced files
+(FASTQ.gz, SFF.gz, and BAM.gz) and an XML metadata file, organized into a
+submission package.
 ..
     Avoid covering upstream and downstream steps that are not explicitly and
     necessarily part of the tutorial - write or link to separate quick
