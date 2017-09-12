@@ -3,23 +3,16 @@
 |Home_Icon|_
 `Learning Center Home <http://learning.cyverse.org/>`_
 
-Submit High-througput Sequencing Reads to NCBI Short Read Archive (SRA)
-=========================================================================
+Submit High-througput Sequencing Reads to NCBI Sequence Read Archive (SRA)
+============================================================================
 
 Goal
 ----
-This workflow enables CyVerse users to make submissions to the `NCBI Sequence Read Archive (SRA) <https://www.ncbi.nlm.nih.gov/sra>`_.  
+This workflow enables CyVerse users to make submissions to the `NCBI Sequence Read Archive (SRA) <https://www.ncbi.nlm.nih.gov/sra>`_.
 Submissions instructions include compressed sequenced files
 (FASTQ.gz, SFF.gz, and BAM.gz) and an XML metadata file, organized into a
-submission package.
-..
-    Avoid covering upstream and downstream steps that are not explicitly and
-    necessarily part of the tutorial - write or link to separate quick
-    starts/tutorials for those parts
-
-..
-    #### Comment: A few sentences (50 words or less) describing the ultimate goal of the steps
-    in this tutorial ####
+submission package. If you need to submit an alternative file format (HD5,
+SOLiD, and SRF) please email support@cyverse.org
 
 ----
 
@@ -27,23 +20,26 @@ submission package.
 	:maxdepth: 2
 
 	Quickstart home <self>
-	Step Two <step2.rst>
-
-..
-	#### Comment:This tutorial can have multiple pages. The table of contents assumes
-	you have an additional page called 'Step Two' with content located in 'step2.rst'
-	Edit these titles and filenames as needed ####
-
-..
-    #### Comment: If you are using the TOC remove the 'summary', 'Additional information,
-    help' and 'Fix or improve this tutorial' from all pages except the last page of the
-    quickstart ####
+	Create and organize an SRA submission package <step1.rst>
+	Generate metadata and associate with SRA submission <step2.rst>
+	Submit package to SRA <step3.rst>
+	Confirm submission to SRA and fix errors <step4.rst>
 
 -----
 
 Prerequisites
 -------------
 
+.. Note::
+	To complete this tutorial, you must upload your FASTQ/SFF/BAM files to the
+	CyVerse Data Store. See the `Data Store Guide <https://cyverse-data-store-guide.readthedocs-hosted.com/en/latest/>`_
+	for instructions on how to upload your files (for example, using
+	`Cyberduck <https://cyverse-data-store-guide.readthedocs-hosted.com/en/latest/step1.html>`_).
+	Also, you will need detailed metadata about the sample being submitted (
+	collection/accession information, cell line metadata, etc.) and the sequencing
+	platform used (library prepration strategy, sequencing chemistry, etc.). These
+	requirements will vary for the organisim squenced and are discussed in detail
+	In the metadata section of this quickstart.
 
 
 Downloads, access, and services
@@ -61,12 +57,9 @@ Downloads, access, and services
    * - CyVerse account
      - You will need a CyVerse account to complete this exercise
      - `Register <https://user.cyverse.org/>`_
-   * - Atmosphere access
-     - You must have access to Atmosphere
-     - `Request Access <https://user.cyverse.org/>`_
-   * - Cyberduck
-     - Standalone software for upload/download to Data Store
-     - `Download <https://cyberduck.io/>`_
+   * - NCBI Account
+     - This quickstart will cover how to login/confirm your account
+     - `Register <https://www.ncbi.nlm.nih.gov/account/register/>`__
 
 Platform(s)
 ~~~~~~~~~~~
@@ -94,26 +87,14 @@ Platform(s)
       - `Discovery Environment <https://de.cyverse.org/de/>`_
       - `DE Manual <https://wiki.cyverse.org/wiki/display/DEmanual/Table+of+Contents>`_
       - `Guide <http://learning.cyverse.org/projects/cyverse-discovery-environment-guide/>`__
-    * - Atmosphere
-      - Command line (ssh) and/or Desktop (VNC)
-      - `Atmosphere <https://atmo.cyverse.org>`_
-      - `Atmosphere Manual <https://wiki.cyverse.org/wiki/display/atmman/Atmosphere+Manual+Table+of+Contents>`_
-      - `Guide <https://cyverse-atmosphere-guide.readthedocs-hosted.com/en/latest/>`__
-    * - BisQue
-      - Web/Point-and-click and/or Command-line (API)
-      - `BisQue <https://bisque.cyverse.org/client_service/>`_
-      - `BisQue Manual <https://wiki.cyverse.org/wiki/display/BIS>`_
-      - `Guide <>`__
-    * - DNA Subway
-      - Web/Point-and-click
-      - `DNA Subway <https://dnasubway.cyverse.org/>`_
-      - `DNA Subway Manual <http://dnasubway.cyverse.org/files/pdf/DNA_Subway_Guide.pdf>`_
-      - `Guide <https://cyverse-dnasubway-guide.readthedocs-hosted.com/en/latest/>`__
-    * - Agave API
-      - Command-line (API)
-      - `Agave API <https://agaveapi.co>`_
-      - `Live Docs <https://agaveapi.co>`_
-      - `Guide <>`__
+
+.. Note::
+  **Register for an NCBI Account**
+
+	If you do not have an NCBI account (you can check for an existing acocunt logging
+	in at `https://www.ncbi.nlm.nih.gov/account/ <https://www.ncbi.nlm.nih.gov/account/>`_ );
+	register at `https://www.ncbi.nlm.nih.gov/account/register/ <https://www.ncbi.nlm.nih.gov/account/register/>`_.
+
 
 Input and example data
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -127,48 +108,10 @@ Input and example data
       - Format
       - Preparation/Notes
       - Example Data
-    * -
-      -
-      -
-      -
-
-----
-
-
-*Get started*
---------------
-
-1. Step one
-2. Step two
-
-----
-
-
-
-*Summary*
-~~~~~~~~~~~
-
-
-**Next Steps:**
-
-Some common next steps include:
-
-1. Step
-
-2. Step
-
-----
-
-Additional information, help
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-..
-    Short description and links to any reading materials
-
-Search for an answer: `CyVerse Learning Center <http://learning.cyverse.org>`_ or `CyVerse Wiki <https://wiki.cyverse.org>`_
-
-Post your question to the user forum:
-`Ask CyVerse <http://ask.iplantcollaborative.org/questions>`_
+    * - FastQ/SFF/BAM files
+      - FastQ/SFF/BAM compressed (.gz/.bz2).
+      - For additional details see the `SRA File Format Guide <https://www.ncbi.nlm.nih.gov/sra/docs/submitformats/>`_
+      - `Sample truncated sample FastQ files <http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/quickstarts/sra_submission/00_input_fastq_files>`_
 
 ----
 
