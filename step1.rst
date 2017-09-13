@@ -19,14 +19,18 @@ Create and organize an SRA submission package
   before submission.
 
 
+.. important::
+    This quickstart assumes you have uploaded your files to the CyVerse Data
+    Store. If not, following the directions for `uploading files to the Data Store <https://cyverse-data-store-guide.readthedocs-hosted.com/en/latest/>`_.
+    If possible, you may wish to compress this files using gunzip/bzip2 before
+    upload.
 
 
-(Optional) Compress files using gunzip
------------------------------------------
 
+(Optional) Compress files in the CyVerse Data Store using gunzip
+-------------------------------------------------------------------
 For submission through CyVerse, the sequence files must be compressed. If your
-files are compressed (.gz/.bz2) you may skip this step. We assume at this point
-your files have been uploaded to the CyVerse Data Store.
+files are compressed (.gz/.bz2) you may skip this step.
 
   1. Login to the CyVerse `Discovery Environment <http://de.cyverse.org/>`_
   2. Click on **Apps** or click this link to open the `Compress files with gzip <https://de.cyverse.org/de/?type=apps&app-id=8beac104-3573-4cbe-8e2d-704470655cf9&system-id=de>`_
@@ -37,8 +41,8 @@ your files have been uploaded to the CyVerse Data Store.
      you may wish to gather them into a single folder to begin your submission.
 
 
-Create SRA submission package
--------------------------------
+Create SRA submission package and add sequence data
+----------------------------------------------------
 An SRA submission requires that your sequencing data are organized in a specific
 structure of folders and subfolders. It will be helpful if you are are familiar
 with SRA terminology:

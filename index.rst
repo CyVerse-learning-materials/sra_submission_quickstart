@@ -21,8 +21,8 @@ SOLiD, and SRF) please email support@cyverse.org
 
 	Quickstart home <self>
 	Create and organize an SRA submission package <step1.rst>
-	Generate metadata and associate with SRA submission <step2.rst>
-	Submit package to SRA <step3.rst>
+	Record metadata and associate with SRA submission <step2.rst>
+	Validate and submit package to SRA <step3.rst>
 	Confirm submission to SRA and fix errors <step4.rst>
 
 -----
