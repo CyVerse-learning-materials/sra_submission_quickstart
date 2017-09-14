@@ -34,13 +34,16 @@ For submission through CyVerse, the sequence files must be compressed. If your
 files are compressed (.gz/.bz2) you may skip this step.
 
   1. Login to the CyVerse `Discovery Environment <http://de.cyverse.org/>`_
-  2. Click on **Apps** or click this link to open the `Compress files with gzip <https://de.cyverse.org/de/?type=apps&app-id=8beac104-3573-4cbe-8e2d-704470655cf9&system-id=de>`_
-     App
+  2. Click this link to open the `Compress files with gzip <https://de.cyverse.org/de/?type=apps&app-id=8beac104-3573-4cbe-8e2d-704470655cf9&system-id=de>`_
+     App or click the **Apps** button and search for the "Compress files with gzip" App.
   3. Under "Inputs" select the individual file (FastQ/SFF/BAM) to compress
   4. Click 'Launch Analysis' to compress the file and click the **Analysis**
      button to monitor job status and view results. Once all files are compressed
      you may wish to gather them into a single folder to begin your submission.
 
+    .. tip::
+      Each file (e.g. read_R1.fastq) must be *individually* compressed (e.g.
+      read_R1.fastq.gz)
 
 Create SRA submission package and add sequence data
 ----------------------------------------------------
@@ -50,7 +53,7 @@ with SRA terminology:
 
   .. tip::
 
-   **Definitions**
+   **SRA Terminology**
 
    Adapted from NCBI:
 
@@ -71,23 +74,23 @@ with SRA terminology:
        - Description
        - Contents
        - Metadata
-     * - BioProject
-       - (On per submission) This is the top-level folder and will contain all
+     * - BioProject (One per submission)
+       - This is the top-level folder and will contain all
          other folder and data.
        - One or more BioSample folders
        - A BioSample Metadata template will specify details like the project
          summary, submitter/investigator information, etc.
-     * - BioSample
-       - (One or more) BioSample folders, one for each experiment/
+     * - BioSample (One or more per submission)
+       - BioSample folders, one for each experiment/
          tissue type, etc.
        - One or more library folders
        - A species/tissue specific metadata template will describe biological
          information about the sample (e.g. sex, collection location, etc.).
-     * - Library
-       - (One per sequencing run) These folder will contain the sequencing data.
+     * - Library (One or more per submission)
+       - These folders will contain the sequencing data.
          Each replicate will have its own library folder.
        - Each library folder
-         will contain one (single-end) or two (paired-end) sequence files.
+         will contain one either one (single-end) or two (paired-end) sequence files.
        - A library metadata template will describe information about the
          sequencing run
 
@@ -118,8 +121,8 @@ with SRA terminology:
 
        |sra_3|
 
-  5. Examine the example submission `BioProject_SRA_QuickStart <http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/quickstarts/sra_submission/01_BioProjectExample>`_ and verify that your sequencing samples
-    are appropriately organized.
+  5. Examine the example submission (`BioProject_SRA_QuickStart <http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/quickstarts/sra_submission/01_BioProjectExample>`_ folder)
+     for refference and ensure your sequencing samples are appropriately organized.
 
 ----
 

@@ -9,9 +9,9 @@ Submit High-throughput Sequencing Reads to NCBI Sequence Read Archive (SRA)
 Goal
 ----
 This workflow enables CyVerse users to make submissions to the `NCBI Sequence Read Archive (SRA) <https://www.ncbi.nlm.nih.gov/sra>`_.
-Submissions instructions include compressed sequenced files
+A submission included compressed sequenced files
 (FASTQ.gz, SFF.gz, and BAM.gz) and an XML metadata file, organized into a
-submission package. If you need to submit an alternative file format (HD5,
+package. If you need to submit an alternative file format (HD5,
 SOLiD, and SRF) please email support@cyverse.org
 
 ----
@@ -35,11 +35,11 @@ Prerequisites
 	CyVerse Data Store. See the `Data Store Guide <https://cyverse-data-store-guide.readthedocs-hosted.com/en/latest/>`_
 	for instructions on how to upload your files (for example, using
 	`Cyberduck <https://cyverse-data-store-guide.readthedocs-hosted.com/en/latest/step1.html>`_).
-	Also, you will need detailed metadata about the sample being submitted (
-	collection/accession information, cell line metadata, etc.) and the sequencing
-	platform used (library preparation strategy, sequencing chemistry, etc.). These
+	Also, you will need detailed metadata about the sample being submitted ( e.g.
+	collection/accession information, cell line/tissue metadata, etc.) and the sequencing
+	platform used (e.g. library preparation strategy, sequencing instrument, etc.). These
 	requirements will vary for the organism sequenced and are discussed in detail
-	In the metadata section of this quickstart.
+	in the metadata section of this quickstart.
 
 
 Downloads, access, and services
@@ -58,7 +58,7 @@ Downloads, access, and services
      - You will need a CyVerse account to complete this exercise
      - `Register <https://user.cyverse.org/>`_
    * - NCBI Account
-     - This quickstart will cover how to login/confirm your account
+     - Submissions will be sent to NCBI
      - `Register <https://www.ncbi.nlm.nih.gov/account/register/>`__
 
 .. Note::

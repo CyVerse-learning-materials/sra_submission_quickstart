@@ -22,6 +22,7 @@ metadata with your submission.
 I. Complete BioProject Metadata Template
 -----------------------------------------
 We will complete the BioProject Creation template to begin a new submission.
+You can download a completed example template `here <http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/quickstarts/sra_submission/01_BioProjectExample/BioProject_metadata.csv>`__
 
   1. Login to the CyVerse `Discovery Environment <http://de.cyverse.org/>`_
   2. Click on **Data** to open a Data Window, and from the "Metadata" menu
@@ -102,7 +103,8 @@ II. Complete BioSample Metadata Template
 You will next need to select the appropriate BioSample template (organism/sample
 specific) and apply this to all of your BioSample folders. Most of the information
 may be the same for each BioSample, with differences including things like treatments
-and/or tissue sources.
+and/or tissue sources. You can view a completed example template `here <http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/quickstarts/sra_submission/01_BioProjectExample/BioSample_metadata.csv>`__
+
 
   1. If necessary, login to the CyVerse `Discovery Environment`_
   2. Click on **Data** to open a Data Window, and from the "Metadata" menu
@@ -142,7 +144,8 @@ III. Complete Library Metadata Template
 -----------------------------------------
 
 This final template will need to be completed for **every** BioSampleLibrary
-folder.
+folder. You can view a completed example template `here <http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/quickstarts/sra_submission/01_BioProjectExample/SRA_library_metadata.csv>`__
+
 
   1. If necessary, login to the CyVerse `Discovery Environment`_
   2. Click on **Data** to open a Data Window, and from the "Metadata" menu
@@ -183,7 +186,8 @@ IV. Generate summary metadata file
 ------------------------------------
 
 We will now generate a file that captures the metadata for the entire submission.
-In the next step, we will validate our results.
+In the next step, we will validate our results. You view an example of this
+file `here <http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/quickstarts/sra_submission/01_BioProjectExample/submission_metadata.xml>`__
 
   1. If necessary, login to the CyVerse `Discovery Environment`_
   2. Click on **Data** to open a Data Window, and select your top-level BioProject

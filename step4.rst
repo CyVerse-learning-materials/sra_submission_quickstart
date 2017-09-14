@@ -24,7 +24,7 @@ You may need to log in with the NCBI credentials for the account you used in the
 submission metadata.
 
 
-If your SRA submission contains Errors
+If your SRA submission contains errors
 ----------------------------------------
 You will recive an email at the email address provided in the package metadata
 (also associated with your NCBI account) informing you about the error. you can
