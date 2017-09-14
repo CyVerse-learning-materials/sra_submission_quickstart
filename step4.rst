@@ -46,8 +46,7 @@ Submission Report Retrieval' App in the DE, make corrections, and resubmit.
      - A folder of logs.
      - A folder with your username and a long alphanumeric string.  This folder
        will contain a report detailing the errors detected. You should correct
-       these errors (see tip below) and resave the metadata file (see IV. Generate
-       summary metadata file).
+       these errors (see tip below) and resave the metadata file (see `IV. Generatesummary metadata file <https://cyverse-sra-submission-quickstart.readthedocs-hosted.com/en/latest/step2.html#iv-generate-summary-metadata-file>`_).
 
     .. tip::
 
