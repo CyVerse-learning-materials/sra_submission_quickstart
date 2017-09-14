@@ -9,8 +9,8 @@ sys.path.insert(0, os.path.dirname(__file__))
 
 from misc.cyverse_sphinx_conf import *  # noqa
 
-project = 'YOUR PROJECT NAME HERE as topic_quick_start or topic_tutorial'
-copyright = '2016, CyVerse'
+project = 'Submit Sequencing Data to NCBI Short Read Archive (SRA)'
+copyright = '2017, CyVerse'
 author = 'Jason Williams'
 version = '1.0'
 release = '1.0'

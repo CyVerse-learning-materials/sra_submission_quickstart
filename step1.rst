@@ -8,21 +8,22 @@ Create and organize an SRA submission package
 ===============================================
 
 .. Important::
-  **A Reminder on File Names and other SRA Requements**
+  **A Reminder on File Names and other SRA Requirements**
+
   NCBI has extensive requirements for depositing data into the SRA. The CyVerse
   submission pipeline is an attempt to streamline this process, but your
-  submission must meet the following requirements. File names must be unique,
-  and may not containe special characters (e.g. { } ? * . , etc.) or spaces.
+  submission must meet several requirements. File names must be unique,
+  and may not contain special characters (e.g. { } ? * . , etc.) or spaces.
 
   The `SRA Submission Quick Start <https://www.ncbi.nlm.nih.gov/sra/docs/submit/>`_
-  is the authoritative guide to SRA requiements. It is worth reading through this
+  is the authoritative guide to SRA requirements. It is worth reading through this
   before submission.
 
 
 .. important::
     This quickstart assumes you have uploaded your files to the CyVerse Data
     Store. If not, following the directions for `uploading files to the Data Store <https://cyverse-data-store-guide.readthedocs-hosted.com/en/latest/>`_.
-    If possible, you may wish to compress this files using gunzip/bzip2 before
+    If possible, you may wish to compress these files using gunzip/bzip2 before
     upload.
 
 
@@ -34,17 +35,17 @@ files are compressed (.gz/.bz2) you may skip this step.
 
   1. Login to the CyVerse `Discovery Environment <http://de.cyverse.org/>`_
   2. Click on **Apps** or click this link to open the `Compress files with gzip <https://de.cyverse.org/de/?type=apps&app-id=8beac104-3573-4cbe-8e2d-704470655cf9&system-id=de>`_
-     app
+     App
   3. Under "Inputs" select the individual file (FastQ/SFF/BAM) to compress
   4. Click 'Launch Analysis' to compress the file and click the **Analysis**
-     Button to monitor job status and view results. Once all files are compressed
+     button to monitor job status and view results. Once all files are compressed
      you may wish to gather them into a single folder to begin your submission.
 
 
 Create SRA submission package and add sequence data
 ----------------------------------------------------
 An SRA submission requires that your sequencing data are organized in a specific
-structure of folders and subfolders. It will be helpful if you are are familiar
+structure of folders and subfolders. It will be helpful if you are familiar
 with SRA terminology:
 
   .. tip::
@@ -75,9 +76,9 @@ with SRA terminology:
          other folder and data.
        - One or more BioSample folders
        - A BioSample Metadata template will specify details like the project
-         summary, submittor/investigator information, etc.
+         summary, submitter/investigator information, etc.
      * - BioSample
-       - There will be one (or more) BioSample folders, one for each experiment/
+       - (One or more) BioSample folders, one for each experiment/
          tissue type, etc.
        - One or more library folders
        - A species/tissue specific metadata template will describe biological
@@ -86,7 +87,7 @@ with SRA terminology:
        - (One per sequencing run) These folder will contain the sequencing data.
          Each replicate will have its own library folder.
        - Each library folder
-         will contain one (single-end) or two (paried-end) sequence files.
+         will contain one (single-end) or two (paired-end) sequence files.
        - A library metadata template will describe information about the
          sequencing run
 
@@ -117,14 +118,14 @@ with SRA terminology:
 
        |sra_3|
 
-  5. Examine the `Example submission <http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/quickstarts/sra_submission/01_BioProjectExample>`_ and verify that your sequencing samples
+  5. Examine the example submission `BioProject_SRA_QuickStart <http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/quickstarts/sra_submission/01_BioProjectExample>`_ and verify that your sequencing samples
     are appropriately organized.
 
 ----
 
 **Fix or improve this documentation**
 
-- On Github: `Repo link <FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_>`_
+- On Github: `Repo link <https://github.com/CyVerse-learning-materials/sra_submission_quickstart>`_
 - Send feedback: `Tutorials@CyVerse.org <Tutorials@CyVerse.org>`_
 
 ----

@@ -3,7 +3,7 @@
 |Home_Icon|_
 `Learning Center Home <http://learning.cyverse.org/>`_
 
-Submit High-througput Sequencing Reads to NCBI Sequence Read Archive (SRA)
+Submit High-throughput Sequencing Reads to NCBI Sequence Read Archive (SRA)
 ============================================================================
 
 Goal
@@ -37,8 +37,8 @@ Prerequisites
 	`Cyberduck <https://cyverse-data-store-guide.readthedocs-hosted.com/en/latest/step1.html>`_).
 	Also, you will need detailed metadata about the sample being submitted (
 	collection/accession information, cell line metadata, etc.) and the sequencing
-	platform used (library prepration strategy, sequencing chemistry, etc.). These
-	requirements will vary for the organisim squenced and are discussed in detail
+	platform used (library preparation strategy, sequencing chemistry, etc.). These
+	requirements will vary for the organism sequenced and are discussed in detail
 	In the metadata section of this quickstart.
 
 
@@ -60,6 +60,13 @@ Downloads, access, and services
    * - NCBI Account
      - This quickstart will cover how to login/confirm your account
      - `Register <https://www.ncbi.nlm.nih.gov/account/register/>`__
+
+.. Note::
+  **Register for an NCBI Account**
+
+	If you do not have an NCBI account (you can check for an existing acocunt logging
+	in at `https://www.ncbi.nlm.nih.gov/account/ <https://www.ncbi.nlm.nih.gov/account/>`_ );
+	register at `https://www.ncbi.nlm.nih.gov/account/register/ <https://www.ncbi.nlm.nih.gov/account/register/>`_.
 
 Platform(s)
 ~~~~~~~~~~~
@@ -88,14 +95,6 @@ Platform(s)
       - `DE Manual <https://wiki.cyverse.org/wiki/display/DEmanual/Table+of+Contents>`_
       - `Guide <http://learning.cyverse.org/projects/cyverse-discovery-environment-guide/>`__
 
-.. Note::
-  **Register for an NCBI Account**
-
-	If you do not have an NCBI account (you can check for an existing acocunt logging
-	in at `https://www.ncbi.nlm.nih.gov/account/ <https://www.ncbi.nlm.nih.gov/account/>`_ );
-	register at `https://www.ncbi.nlm.nih.gov/account/register/ <https://www.ncbi.nlm.nih.gov/account/register/>`_.
-
-
 Input and example data
 ~~~~~~~~~~~~~~~~~~~~~~
 
@@ -117,7 +116,7 @@ Input and example data
 
 **Fix or improve this documentation**
 
-- On Github: `Repo link <FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_>`_
+- On Github: `Repo link <https://github.com/CyVerse-learning-materials/sra_submission_quickstart>`_
 - Send feedback: `Tutorials@CyVerse.org <Tutorials@CyVerse.org>`_
 
 ----
