@@ -14,10 +14,15 @@ metadata with your submission.
 - **BioSample**: Metadata describing the source materials sampled
 - **Library**: Metadata describing the sequencing runs
 
+|sra_8|
+
 .. warning::
   The metadata templates are defined by NCBI. Each field must be completed
   *exactly* as described. Any typos or invalid entries will cause your submission
   to be rejected.
+
+
+
 
 I. Complete BioProject Metadata Template
 -----------------------------------------
@@ -222,3 +227,6 @@ file `here <http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_tra
 .. |sra_5| image:: ./img/sra_5.png
    :width: 425
    :height: 225
+.. |sra_8| image:: ./img/sra_8.png
+   :width: 825
+   :height: 625
