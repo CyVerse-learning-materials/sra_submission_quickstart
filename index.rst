@@ -64,7 +64,7 @@ Downloads, access, and services
 .. Note::
   **Register for an NCBI Account**
 
-	If you do not have an NCBI account (you can check for an existing acocunt logging
+	If you do not have an NCBI account (you can check for an existing account logging
 	in at `https://www.ncbi.nlm.nih.gov/account/ <https://www.ncbi.nlm.nih.gov/account/>`_ );
 	register at `https://www.ncbi.nlm.nih.gov/account/register/ <https://www.ncbi.nlm.nih.gov/account/register/>`_.
 
